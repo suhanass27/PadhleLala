@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PadhleLala</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= LOGIN / SIGN UP ================= -->
+
+<section id="loginScreen" class="login-screen">
+
+    <div class="login-wrap">
+
+        <!-- Left: what the app does -->
+        <div class="login-hero">
+
+            <div class="logo">P</div>
+
+            <h1>Padhle<span>Lala</span></h1>
+
+            <p class="hero-line">
+                One place to track your coding, web development
+                and AI/ML learning.
+            </p>
+
+            <ul class="feature-list">
+                <li><b>🟡</b> Solve DSA questions every day</li>
+                <li><b>🔵</b> Learn web development step by step</li>
+                <li><b>🟣</b> Explore AI / ML at your own pace</li>
+                <li><b>🌈</b> Pick any track — or all three</li>
+                <li><b>🔥</b> Build a streak and never break it</li>
+            </ul>
+
+        </div>
+
+
+        <!-- Right: form -->
+        <div class="login-card">
+
+            <div class="auth-tabs">
+                <button type="button" class="auth-tab active" data-auth-tab="login">Log in</button>
+                <button type="button" class="auth-tab" data-auth-tab="signup">Create account</button>
+            </div>
+
+            <h2 id="authTitle">Welcome back 👋</h2>
+            <p id="authSub" class="auth-sub">Log in to continue your learning journey.</p>
+
+            <form id="authForm" autocomplete="on">
+
+                <div class="auth-field hidden" id="nameWrap">
+                    <label for="authName">Your name</label>
+                    <input id="authName" placeholder="Example: Riya Sharma" autocomplete="name">
+                </div>
+
+                <div class="auth-field">
+                    <label for="authUser">Username</label>
+                    <input id="authUser" placeholder="Example: riya_21" autocomplete="username">
+                    <small>3–20 characters. Letters, numbers, _ and . only.</small>
+                </div>
+
+                <div class="auth-field">
+                    <label for="authPass">Password</label>
+                    <div class="pass-wrap">
+                        <input id="authPass" type="password" placeholder="At least 6 characters" autocomplete="current-password">
+                        <button type="button" id="togglePass" class="text-btn">Show</button>
+                    </div>
+                </div>
+
+                <div id="authError" class="auth-error hidden"></div>
+
+                <button id="authSubmit" class="google-btn" type="submit">Log in</button>
+
+            </form>
+
+            <div class="or-line"><span>or</span></div>
+
+            <button id="guestLoginBtn" class="secondary-btn" type="button">
+                Continue as Guest
+            </button>
+
+            <small id="cloudNote">
+                Guest progress is saved only on this browser.
+            </small>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= APPLICATION ================= -->
+
+<div id="app" class="app hidden">
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-logo">P</div>
+            <span>PadhleLala</span>
+        </div>
+
+        <nav>
+
+            <button class="nav-btn active" data-section="dashboard">
+                <span class="nav-icon">🏠</span><span class="nav-text">Dashboard</span>
+            </button>
+
+            <button class="nav-btn" data-section="dsa">
+                <span class="nav-icon">🟡</span><span class="nav-text">DSA</span>
+            </button>
+
+            <button class="nav-btn" data-section="development">
+                <span class="nav-icon">🔵</span><span class="nav-text">Web Development</span>
+            </button>
+
+            <button class="nav-btn" data-section="aiml">
+                <span class="nav-icon">🟣</span><span class="nav-text">AI / ML</span>
+            </button>
+
+            <button class="nav-btn" data-section="projects">
+                <span class="nav-icon">🚀</span><span class="nav-text">Projects</span>
+            </button>
+
+            <button class="nav-btn" data-section="resources">
+                <span class="nav-icon">📚</span><span class="nav-text">Resources</span>
+            </button>
+
+            <button class="nav-btn" data-section="history">
+                <span class="nav-icon">📜</span><span class="nav-text">History</span>
+            </button>
+
+            <button class="nav-btn" data-section="settings">
+                <span class="nav-icon">⚙️</span><span class="nav-text">Settings</span>
+            </button>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="side-streak">
+                🔥
+                <strong id="sideStreak">0</strong>
+                day streak
+            </div>
+
+            <button id="logoutBtn" class="logout-btn">
+                Log out
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <p class="eyebrow">
+                    YOUR LEARNING COMMAND CENTER
+                </p>
+
+                <h2 id="pageTitle">
+                    Good morning 👋
+                </h2>
+            </div>
+
+            <div class="topbar-right">
+
+                <span id="syncBadge" class="sync-badge"></span>
+
+                <div class="profile">
+
+                    <div id="avatar">G</div>
+
+                    <span id="profileName">
+                        Guest
+                    </span>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- PAGES -->
+
+        <section id="dashboard" class="page active-page"></section>
+
+        <section id="dsa" class="page"></section>
+
+        <section id="development" class="page"></section>
+
+        <section id="aiml" class="page"></section>
+
+        <section id="projects" class="page"></section>
+
+        <section id="resources" class="page"></section>
+
+        <section id="history" class="page"></section>
+
+        <section id="settings" class="page"></section>
+
+    </main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
