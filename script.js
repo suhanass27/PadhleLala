@@ -35,7 +35,8 @@ let data = null;
 
 /* =========================================================
    DSA SYLLABUS
-   Your first DSA journey
+   DSA Important Questions - topic-wise placement sheet (198 questions).
+   star = high-priority question
 ========================================================= */
 
 const DSA_SYLLABUS = [
@@ -43,179 +44,334 @@ const DSA_SYLLABUS = [
     {
         id: "arrays",
         name: "Arrays",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
         questions: [
             "Two Sum",
             "Best Time to Buy and Sell Stock",
-            "Contains Duplicate",
-            "Product of Array Except Self",
-            "Maximum Subarray",
-            "Maximum Product Subarray",
-            "3Sum",
-            "Container With Most Water",
+            "Maximum Subarray — Kadane's Algorithm",
             "Move Zeroes",
-            "Next Permutation"
-        ]
-    },
-
-    {
-        id: "binary-search",
-        name: "Binary Search",
-        questions: [
-            "Binary Search",
-            "Search Insert Position",
-            "Search in Rotated Sorted Array",
-            "Search in Rotated Sorted Array II",
-            "Find Minimum in Rotated Sorted Array",
-            "Peak Index in a Mountain Array"
+            "Remove Duplicates from Sorted Array",
+            "Rotate Array",
+            "Merge Sorted Arrays",
+            "Majority Element",
+            "Missing Number",
+            "Find Duplicate Number",
+            "Sort 0s, 1s and 2s",
+            "Next Permutation",
+            "Product of Array Except Self",
+            "Maximum Product Subarray",
+            "Subarray Sum Equals K"
         ]
     },
 
     {
         id: "strings",
         name: "Strings",
+        star: [0, 1, 2, 3, 4, 5, 6, 7],
         questions: [
-            "Valid Anagram",
+            "Reverse String",
+            "Reverse Words in a String",
             "Valid Palindrome",
+            "Valid Anagram",
+            "First Unique Character",
             "Longest Common Prefix",
             "Longest Substring Without Repeating Characters",
+            "String Compression",
+            "Implement atoi",
             "Group Anagrams",
             "Longest Palindromic Substring"
         ]
     },
 
     {
-        id: "two-pointer",
-        name: "Two Pointers / Sliding Window",
+        id: "searching",
+        name: "Searching",
+        star: [2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
         questions: [
-            "Two Sum II",
-            "3Sum",
-            "Container With Most Water",
-            "Longest Substring Without Repeating Characters",
-            "Minimum Size Subarray Sum",
-            "Permutation in String"
+            "Search an Element",
+            "Find Maximum/Minimum",
+            "Binary Search",
+            "First and Last Position",
+            "Search Insert Position",
+            "Search in Rotated Sorted Array",
+            "Search in Rotated Sorted Array II",
+            "Find Minimum in Rotated Sorted Array",
+            "Peak Element",
+            "Square Root using Binary Search",
+            "Koko Eating Bananas",
+            "Allocate Minimum Number of Pages",
+            "Aggressive Cows",
+            "Median of Two Sorted Arrays"
         ]
     },
 
     {
-        id: "hashing",
-        name: "Hashing",
+        id: "sorting",
+        name: "Sorting",
+        star: [0, 1, 2, 3, 4, 5, 6],
         questions: [
-            "Contains Duplicate",
-            "Two Sum",
-            "Group Anagrams",
-            "Top K Frequent Elements",
-            "Longest Consecutive Sequence"
+            "Bubble Sort",
+            "Selection Sort",
+            "Insertion Sort",
+            "Merge Sort",
+            "Quick Sort",
+            "Counting Sort",
+            "Sort 0s, 1s and 2s",
+            "Merge Overlapping Intervals",
+            "Meeting Rooms",
+            "Kth Largest/Smallest Element"
         ]
     },
 
     {
         id: "linked-list",
         name: "Linked List",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
         questions: [
             "Reverse Linked List",
+            "Find Middle of Linked List",
+            "Detect Cycle",
+            "Remove Cycle",
             "Merge Two Sorted Lists",
-            "Linked List Cycle",
             "Remove Nth Node From End",
-            "Reorder List",
-            "Add Two Numbers"
+            "Palindrome Linked List",
+            "Intersection of Two Linked Lists",
+            "Add Two Numbers",
+            "Reverse Linked List in Groups of K",
+            "Sort Linked List",
+            "Flatten a Linked List"
         ]
     },
 
     {
-        id: "stack-queue",
-        name: "Stacks / Queues",
+        id: "stack",
+        name: "Stack",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         questions: [
+            "Implement Stack using Array",
+            "Implement Stack using Linked List",
             "Valid Parentheses",
+            "Next Greater Element",
+            "Next Smaller Element",
+            "Previous Greater Element",
+            "Previous Smaller Element",
             "Min Stack",
-            "Evaluate Reverse Polish Notation",
-            "Daily Temperatures",
-            "Implement Queue using Stacks"
+            "Evaluate Postfix Expression",
+            "Infix to Postfix",
+            "Largest Rectangle in Histogram",
+            "Celebrity Problem"
+        ]
+    },
+
+    {
+        id: "queue",
+        name: "Queue",
+        star: [0, 1, 2, 3, 4, 5, 6],
+        questions: [
+            "Implement Queue using Array",
+            "Implement Queue using Linked List",
+            "Circular Queue",
+            "Queue using Two Stacks",
+            "Stack using Two Queues",
+            "First Negative Number in Every Window",
+            "Sliding Window Maximum",
+            "Generate Binary Numbers from 1 to N"
         ]
     },
 
     {
         id: "recursion",
         name: "Recursion",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
         questions: [
-            "Fibonacci Number",
-            "Power of Two",
-            "Subsets",
+            "Factorial",
+            "Fibonacci",
+            "Sum of N Numbers",
+            "Reverse a String",
+            "Reverse an Array",
+            "Power of a Number",
+            "Check Palindrome",
+            "Binary Search using Recursion",
+            "Generate Subsequences",
+            "Generate All Permutations",
+            "Tower of Hanoi"
+        ]
+    },
+
+    {
+        id: "backtracking",
+        name: "Backtracking",
+        star: [0, 1, 2, 3, 4, 5, 6, 7],
+        questions: [
+            "Rat in a Maze",
+            "N-Queens",
+            "Sudoku Solver",
+            "Generate Parentheses",
             "Permutations",
-            "Combination Sum"
+            "Combinations",
+            "Subsets",
+            "Combination Sum",
+            "Word Search"
         ]
     },
 
     {
         id: "trees",
         name: "Trees",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],
         questions: [
-            "Maximum Depth of Binary Tree",
-            "Invert Binary Tree",
-            "Same Tree",
-            "Binary Tree Level Order Traversal",
+            "Inorder Traversal",
+            "Preorder Traversal",
+            "Postorder Traversal",
+            "Level Order Traversal",
+            "Height/Maximum Depth",
+            "Count Nodes",
             "Diameter of Binary Tree",
-            "Balanced Binary Tree"
+            "Check Balanced Binary Tree",
+            "Lowest Common Ancestor",
+            "Left View",
+            "Right View",
+            "Top View",
+            "Bottom View",
+            "Zigzag Traversal",
+            "Boundary Traversal",
+            "Serialize and Deserialize Binary Tree"
         ]
     },
 
     {
-        id: "bst-heaps",
-        name: "BST / Heaps",
+        id: "bst",
+        name: "Binary Search Tree",
+        star: [0, 1, 2, 3, 4, 5, 6],
         questions: [
-            "Validate Binary Search Tree",
-            "Kth Smallest Element in a BST",
-            "Lowest Common Ancestor of BST",
-            "Kth Largest Element in an Array",
-            "Top K Frequent Elements"
+            "Search in BST",
+            "Insert into BST",
+            "Delete Node in BST",
+            "Validate BST",
+            "Find Minimum/Maximum",
+            "Kth Smallest Element",
+            "Lowest Common Ancestor in BST",
+            "Convert Sorted Array to BST",
+            "Two Sum in BST"
         ]
     },
 
     {
-        id: "graphs",
-        name: "Graphs",
+        id: "heap",
+        name: "Heap / Priority Queue",
+        star: [0, 1, 2, 3, 4, 5, 6, 7],
         questions: [
-            "Number of Islands",
-            "Clone Graph",
-            "Course Schedule",
-            "Rotting Oranges",
-            "Graph Valid Tree"
+            "Implement Min Heap",
+            "Implement Max Heap",
+            "Kth Largest Element",
+            "Kth Smallest Element",
+            "Top K Frequent Elements",
+            "Merge K Sorted Arrays",
+            "Merge K Sorted Linked Lists",
+            "Find Median from Data Stream",
+            "Sort a K-Sorted Array"
+        ]
+    },
+
+    {
+        id: "hashing",
+        name: "Hashing",
+        star: [0, 1, 2, 3, 4, 5, 6],
+        questions: [
+            "Two Sum",
+            "Frequency of Elements",
+            "First Non-Repeating Element",
+            "Longest Consecutive Sequence",
+            "Subarray Sum Equals K",
+            "Count Distinct Elements",
+            "Intersection of Two Arrays",
+            "Group Anagrams"
         ]
     },
 
     {
         id: "greedy",
         name: "Greedy",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8],
         questions: [
+            "Activity Selection",
+            "Fractional Knapsack",
+            "Job Sequencing",
+            "Minimum Number of Platforms",
+            "N Meetings in One Room",
             "Assign Cookies",
             "Jump Game",
-            "Jump Game II",
             "Gas Station",
-            "Partition Labels"
+            "Minimum Coins",
+            "Huffman Coding"
         ]
     },
 
     {
         id: "dp",
         name: "Dynamic Programming",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18],
         questions: [
+            "Fibonacci",
             "Climbing Stairs",
             "House Robber",
+            "Frog Jump",
+            "Maximum Sum of Non-Adjacent Elements",
+            "0/1 Knapsack",
+            "Subset Sum",
+            "Equal Sum Partition",
+            "Count Subsets with Given Sum",
             "Coin Change",
-            "Longest Increasing Subsequence",
+            "Rod Cutting",
             "Longest Common Subsequence",
+            "Longest Common Substring",
+            "Edit Distance",
+            "Longest Palindromic Subsequence",
+            "Minimum Insertions to Make Palindrome",
+            "Longest Increasing Subsequence",
+            "Matrix Chain Multiplication",
+            "Partition DP",
             "Word Break"
         ]
     },
 
     {
-        id: "tries-bits",
-        name: "Tries / Bit Manipulation",
+        id: "graphs",
+        name: "Graphs",
+        star: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16],
+        questions: [
+            "Graph Representation",
+            "BFS",
+            "DFS",
+            "Number of Islands",
+            "Detect Cycle in Undirected Graph",
+            "Detect Cycle in Directed Graph",
+            "Bipartite Graph",
+            "Topological Sort",
+            "Course Schedule",
+            "Number of Connected Components",
+            "Shortest Path in Unweighted Graph",
+            "Dijkstra's Algorithm",
+            "Bellman-Ford",
+            "Floyd-Warshall",
+            "Prim's Algorithm",
+            "Kruskal's Algorithm",
+            "Disjoint Set Union",
+            "Minimum Spanning Tree"
+        ]
+    },
+
+    {
+        id: "trie",
+        name: "Trie",
+        star: [0, 1, 2, 3, 4],
         questions: [
             "Implement Trie",
-            "Maximum XOR of Two Numbers",
-            "Single Number",
-            "Counting Bits",
-            "Number of 1 Bits"
+            "Search Word",
+            "Insert Word",
+            "Starts With / Prefix Search",
+            "Word Dictionary",
+            "Maximum XOR of Two Numbers"
         ]
     }
 
@@ -390,7 +546,7 @@ const AIML_SYLLABUS = [
     {
         id: "python",
         name: "Python Revision",
-        video: "Sheriyans AI School — Python Full Course",
+        video: "Python Full Course",
         tasks: [
             "Python fundamentals revision",
             "Functions and modules",
@@ -403,7 +559,7 @@ const AIML_SYLLABUS = [
     {
         id: "numpy",
         name: "NumPy",
-        video: "Sheriyans AI School — Complete NumPy Course",
+        video: "Complete NumPy Course",
         tasks: [
             "Arrays",
             "Array operations",
@@ -417,7 +573,7 @@ const AIML_SYLLABUS = [
     {
         id: "pandas",
         name: "Pandas",
-        video: "Sheriyans AI School — Complete Pandas Course",
+        video: "Complete Pandas Course",
         tasks: [
             "Series",
             "DataFrame",
@@ -432,7 +588,7 @@ const AIML_SYLLABUS = [
     {
         id: "visualization",
         name: "Data Visualization",
-        video: "Sheriyans AI School — Complete Data Visualization",
+        video: "Complete Data Visualization",
         tasks: [
             "Matplotlib basics",
             "Line plots",
@@ -446,7 +602,7 @@ const AIML_SYLLABUS = [
     {
         id: "statistics",
         name: "Statistics",
-        video: "Sheriyans AI School — Complete Statistics Course",
+        video: "Complete Statistics Course",
         tasks: [
             "Mean median mode",
             "Variance and standard deviation",
@@ -460,7 +616,7 @@ const AIML_SYLLABUS = [
     {
         id: "ml-fundamentals",
         name: "Machine Learning Fundamentals",
-        video: "Sheriyans AI School — Machine Learning Part 1",
+        video: "Machine Learning Part 1",
         tasks: [
             "What is Machine Learning",
             "Types of Machine Learning",
@@ -473,7 +629,7 @@ const AIML_SYLLABUS = [
     {
         id: "supervised",
         name: "Supervised Learning",
-        video: "Sheriyans AI School — Machine Learning Part 2",
+        video: "Machine Learning Part 2",
         tasks: [
             "Linear Regression",
             "Multiple Regression",
@@ -486,7 +642,7 @@ const AIML_SYLLABUS = [
     {
         id: "classification",
         name: "Classification",
-        video: "Sheriyans AI School — Machine Learning Part 3",
+        video: "Machine Learning Part 3",
         tasks: [
             "Logistic Regression",
             "Classification metrics",
@@ -499,7 +655,7 @@ const AIML_SYLLABUS = [
     {
         id: "tuning",
         name: "Model Tuning & Unsupervised Learning",
-        video: "Sheriyans AI School — Machine Learning Part 4",
+        video: "Machine Learning Part 4",
         tasks: [
             "Hyperparameters",
             "Cross validation",
@@ -513,7 +669,7 @@ const AIML_SYLLABUS = [
     {
         id: "sql",
         name: "SQL for Data Analytics",
-        video: "Sheriyans AI School — Complete SQL",
+        video: "Complete SQL",
         tasks: [
             "SELECT",
             "WHERE",
@@ -527,7 +683,7 @@ const AIML_SYLLABUS = [
     {
         id: "nlp",
         name: "NLP",
-        video: "Sheriyans AI School — Complete NLP",
+        video: "Complete NLP",
         tasks: [
             "Text preprocessing",
             "Tokenization",
@@ -540,7 +696,7 @@ const AIML_SYLLABUS = [
     {
         id: "deep-learning",
         name: "Deep Learning — ANN",
-        video: "Sheriyans AI School — Deep Learning Part 1",
+        video: "Deep Learning Part 1",
         tasks: [
             "Neural Network introduction",
             "Perceptron",
@@ -558,7 +714,7 @@ const AIML_SYLLABUS = [
     {
         id: "cnn",
         name: "Deep Learning — CNN",
-        video: "Sheriyans AI School — Deep Learning Part 2",
+        video: "Deep Learning Part 2",
         tasks: [
             "CNN introduction",
             "Convolution",
@@ -572,7 +728,7 @@ const AIML_SYLLABUS = [
     {
         id: "rnn",
         name: "Deep Learning — RNN",
-        video: "Sheriyans AI School — Deep Learning Part 3",
+        video: "Deep Learning Part 3",
         tasks: [
             "Sequence data",
             "RNN architecture",
@@ -586,7 +742,7 @@ const AIML_SYLLABUS = [
     {
         id: "transformers",
         name: "Transformers & Attention",
-        video: "Sheriyans AI School — Deep Learning Part 4",
+        video: "Deep Learning Part 4",
         tasks: [
             "Attention",
             "Self attention",
@@ -600,7 +756,7 @@ const AIML_SYLLABUS = [
     {
         id: "genai",
         name: "Generative AI",
-        video: "Sheriyans AI School — Generative AI Part 1",
+        video: "Generative AI Part 1",
         tasks: [
             "LLM introduction",
             "Prompting",
@@ -612,7 +768,7 @@ const AIML_SYLLABUS = [
     {
         id: "rag",
         name: "RAG",
-        video: "Sheriyans AI School — Generative AI Part 2",
+        video: "Generative AI Part 2",
         tasks: [
             "Document loaders",
             "Text splitters",
@@ -626,7 +782,7 @@ const AIML_SYLLABUS = [
     {
         id: "agents",
         name: "AI Agents",
-        video: "Sheriyans AI School — Generative AI Part 3",
+        video: "Generative AI Part 3",
         tasks: [
             "Tools",
             "Tool calling",
@@ -639,7 +795,7 @@ const AIML_SYLLABUS = [
     {
         id: "multi-agent",
         name: "Multi-Agent AI",
-        video: "Sheriyans AI School — Multi-Agent Research System",
+        video: "Multi-Agent Research System",
         tasks: [
             "Multi-agent architecture",
             "Agent communication",
@@ -652,7 +808,7 @@ const AIML_SYLLABUS = [
     {
         id: "ai-assistant",
         name: "AI Video Assistant with RAG",
-        video: "Sheriyans AI School — AI Video Assistant",
+        video: "AI Video Assistant",
         tasks: [
             "Video ingestion",
             "Transcript processing",
@@ -666,7 +822,7 @@ const AIML_SYLLABUS = [
     {
         id: "agentic-ai",
         name: "Agentic AI",
-        video: "Sheriyans AI School — Agentic AI Course",
+        video: "Agentic AI Course",
         tasks: [
             "Agentic AI fundamentals",
             "Planning",
@@ -1235,7 +1391,7 @@ function renderTrack(
                                             >
 
                                             <span>
-                                                ${escapeHTML(item)}
+                                                ${topic.star && topic.star.includes(index) ? "★ " : ""}${escapeHTML(item)}
                                             </span>
 
                                         </label>
@@ -4114,7 +4270,6 @@ function showApp() {
     renderAll();
     openSection("dashboard");
 
-    if (!(data.profile && data.profile.onboarded)) startOnboarding();
 }
 
 
